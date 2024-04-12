@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+nav {
+  height: 3.5rem;
+  background-color: bisque;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.nav-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.nav-logo img {
+  height: 100%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#menu-icon {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.separator div {
+  height: 0.2rem;
+  width: 30vw;
+  background-color: black;
+}
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project img {
+  width: 100%;
+}
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.skill {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+  border: 0.2rem solid bisque;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  #menu-icon {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .links {
+    display: none;
   }
 }
